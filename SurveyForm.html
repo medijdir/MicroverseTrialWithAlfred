@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Survey Form</title>
   </head>
   <body>
@@ -15,15 +16,15 @@
     </header>
     <form id="survey-form">
       <label id="name-label">Name</label>
-      <input type="text" id="name" placeholder="Enter your name" required />
+      <input type="text" id="name" placeholder="Enter your name" required class="field"/>
       <label id="email-label">Email</label>
-      <input type="email" id="email" placeholder="Enter your email" required />
+      <input type="email" id="email" placeholder="Enter your email" required class="field" />
       <label id="number-label">Age</label>
-      <input type="number" id="number" placeholder="Age" min="10" max="99" />
-      <
+      <input type="number" id="number" placeholder="Age" min="10" max="99" class="field" />
+
       <label id="number-label" >Which option best describes your current role?</label>
-      <select id ="dropdown" name="role" required>
-          <option disable selected value>select current role</option>
+      <select id ="dropdown" name="role" class="field" required>
+          <option disable selected value >select current role</option>
           <option value="student">student</option>
           <option value="fulljob">full time job</option>
           <option value="learner">full time learner</option>
@@ -42,7 +43,13 @@
     <label> <input name ="liked" type="checkbox" value="back end project" >Back-end Projects</label>
     <label> <input name ="liked" type="checkbox" value="Data Visualization" >Data Visualization</label>
     <label> <input name ="liked" type="checkbox" value="Challenges" >Challenges</label>
+</div>
+<div class="form-group">
+<p>Any comments or suggestions?</p>
+<textarea placeholder="Enter your comment here ..." class="field" >
 
+</textarea>
+<button type="submit" class="btn">Submit</button>
 </div>
     </form>
   </body>
